@@ -40,7 +40,7 @@ st.markdown("""
         background: rgba(56, 139, 253, 0.12);
         border: 1px solid rgba(56, 139, 253, 0.35);
         border-left: 5px solid #388bfd;
-        color: #e6edf3 !important;
+        color: inherit !important;
         padding: 1.1rem;
         border-radius: 8px;
         margin: 0.8rem 0;
@@ -48,13 +48,13 @@ st.markdown("""
         font-size: 0.95rem;
     }
     .insight-box strong {
-        color: #58a6ff !important;
+        color: #1d4ed8;
     }
     .alert-box {
         background: rgba(248, 81, 73, 0.12);
         border: 1px solid rgba(248, 81, 73, 0.35);
         border-left: 5px solid #f85149;
-        color: #e6edf3 !important;
+        color: inherit !important;
         padding: 1.1rem;
         border-radius: 8px;
         margin: 0.8rem 0;
@@ -62,7 +62,15 @@ st.markdown("""
         font-size: 0.95rem;
     }
     .alert-box strong {
-        color: #ff7b72 !important;
+        color: #b91c1c;
+    }
+    @media (prefers-color-scheme: dark) {
+        .insight-box strong {
+            color: #58a6ff !important;
+        }
+        .alert-box strong {
+            color: #ff7b72 !important;
+        }
     }
     div[data-testid="stMetricValue"] { font-size: 1.8rem; }
 </style>
